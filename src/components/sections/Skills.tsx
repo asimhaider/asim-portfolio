@@ -71,7 +71,7 @@ export function Skills() {
                 <li
                   key={s}
                   className={`rounded-md px-2.5 py-1 text-sm font-medium ${
-                    g.primary ? "bg-ink text-white" : "border border-neutral-200 bg-neutral-50 text-neutral-700"
+                    g.primary ? "bg-brand text-ink" : "border border-neutral-200 bg-neutral-50 text-neutral-700"
                   }`}
                 >
                   {s}

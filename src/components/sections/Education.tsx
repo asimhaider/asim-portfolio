@@ -39,16 +39,16 @@ export function Education() {
           </ul>
         </Reveal>
 
-        <Reveal as="article" delay={100} className="flex flex-col rounded-2xl bg-ink p-6 text-neutral-300 sm:p-8">
+        <Reveal as="article" delay={100} className="flex flex-col rounded-2xl bg-brand-soft p-6 text-neutral-700 sm:p-8">
           <div className="inline-flex w-fit items-center gap-2 rounded-full bg-brand px-3 py-1 text-xs font-semibold text-ink">
             <BookOpen size={14} aria-hidden="true" />
             <span className="font-mono uppercase tracking-wider">Master's thesis</span>
           </div>
-          <h3 className="mt-5 text-2xl leading-snug font-bold text-white">
-            “Challenges of Transitioning from <span className="text-brand">Waterfall to Agile</span>”
+          <h3 className="mt-5 text-2xl leading-snug font-bold text-ink">
+            “Challenges of Transitioning from <span className="text-accent-600">Waterfall to Agile</span>”
           </h3>
-          <p className="mt-4 text-sm leading-relaxed text-neutral-400">
-            <span className="font-semibold text-neutral-100">Why it matters for product work:</span> product teams today
+          <p className="mt-4 text-sm leading-relaxed text-neutral-600">
+            <span className="font-semibold text-ink">Why it matters for product work:</span> product teams today
             work in short, iterative cycles, shipping small increments, learning from users and adjusting priorities.
             Studying why organisations struggle to make that shift (in roles, planning habits, stakeholder expectations
             and culture) gave me a practical understanding of the environment product managers operate in, and of

@@ -5,12 +5,12 @@ import { GithubIcon, LinkedinIcon } from "../ui/BrandIcons";
 
 export function Footer() {
   return (
-    <footer className="border-t-4 border-brand bg-ink text-neutral-400">
+    <footer className="border-t-4 border-brand bg-cream text-neutral-600">
       <div className="container-page flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-[13px] font-extrabold text-ink">AH</span>
           <div>
-            <p className="text-sm font-semibold text-white">{profile.name}</p>
+            <p className="text-sm font-semibold text-ink">{profile.name}</p>
             <p className="mt-0.5 text-sm">Associate Product Manager · Product Analyst · Business Analyst</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export function Footer() {
           </FooterIcon>
         </div>
       </div>
-      <div className="container-page border-t border-white/10 py-5 text-xs text-neutral-500">
+      <div className="container-page border-t border-neutral-200 py-5 text-xs text-neutral-500">
         © {new Date().getFullYear()} {profile.name}. Built with React, TypeScript and Tailwind CSS.
       </div>
     </footer>
@@ -39,7 +39,7 @@ function FooterIcon({ href, label, children }: { href: string; label: string; ch
     <a
       href={href}
       aria-label={label}
-      className="grid h-10 w-10 place-items-center rounded-lg text-neutral-400 transition-colors hover:bg-brand hover:text-ink"
+      className="grid h-10 w-10 place-items-center rounded-lg text-neutral-600 transition-colors hover:bg-brand hover:text-ink"
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
       {children}

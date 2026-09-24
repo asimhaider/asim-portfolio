@@ -23,7 +23,7 @@ export function CareerTransition() {
             <p className="text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed">
               My technical background taught me how products are built. My IT Project Management education taught me
               how technology projects are planned and delivered.{" "}
-              <strong className="bg-ink px-1.5 font-bold text-brand [box-decoration-break:clone]">
+              <strong className="bg-white px-1.5 font-bold text-ink [box-decoration-break:clone]">
                 I am now applying both perspectives to product and business problems.
               </strong>
             </p>
@@ -46,11 +46,11 @@ export function CareerTransition() {
                 </div>
                 <div
                   className={`flex-1 rounded-lg border-2 border-ink px-4 py-3 ${
-                    p.target ? "bg-ink text-white shadow-[5px_5px_0_0_rgba(10,10,10,0.25)]" : "bg-white/60"
+                    p.target ? "bg-white shadow-hard-sm" : "bg-white/60"
                   }`}
                 >
-                  <p className={`font-bold ${p.target ? "text-brand" : ""}`}>{p.label}</p>
-                  <p className={`text-sm ${p.target ? "text-neutral-300" : "text-ink/65"}`}>{p.note}</p>
+                  <p className={`font-bold ${p.target ? "text-accent-700" : ""}`}>{p.label}</p>
+                  <p className={`text-sm ${"text-ink/65"}`}>{p.note}</p>
                 </div>
               </li>
             ))}

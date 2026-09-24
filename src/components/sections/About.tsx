@@ -90,22 +90,22 @@ export function About() {
           </ul>
         </Reveal>
 
-        <Reveal delay={100} className="rounded-2xl bg-ink p-6 text-neutral-300 sm:p-8">
-          <h3 className="text-sm font-semibold text-white">Technologies I've worked with</h3>
-          <p className="mt-1 text-sm text-neutral-400">Used to understand, prototype and build, not the focus of the role I'm seeking.</p>
+        <Reveal delay={100} className="rounded-2xl bg-brand-soft p-6 text-neutral-700 sm:p-8">
+          <h3 className="text-sm font-semibold text-ink">Technologies I've worked with</h3>
+          <p className="mt-1 text-sm text-neutral-600">Used to understand, prototype and build, not the focus of the role I'm seeking.</p>
           <ul className="mt-5 flex flex-wrap gap-2">
             {stack.map((t) => (
               <li
                 key={t}
-                className="rounded-md border border-white/15 px-2.5 py-1 text-sm text-neutral-200 transition-colors hover:border-brand hover:text-brand"
+                className="rounded-md border border-ink/15 bg-white px-2.5 py-1 text-sm text-neutral-800 transition-colors hover:border-ink"
               >
                 {t}
               </li>
             ))}
           </ul>
-          <div className="mt-8 border-t border-white/10 pt-6">
+          <div className="mt-8 border-t border-ink/10 pt-6">
             <p className="text-sm leading-relaxed">
-              <span className="font-semibold text-brand">In short:</span> I understand products, users, business
+              <span className="font-semibold text-accent-600">In short:</span> I understand products, users, business
               requirements, data and technology, and I want to bring them together in a product or analyst role.
             </p>
           </div>

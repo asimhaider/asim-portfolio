@@ -35,8 +35,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b bg-ink/95 backdrop-blur-md transition-colors duration-200 ${
-        scrolled || open ? "border-white/10" : "border-transparent"
+      className={`sticky top-0 z-50 border-b bg-white/95 backdrop-blur-md transition-colors duration-200 ${
+        scrolled || open ? "border-neutral-200" : "border-transparent"
       }`}
     >
       <nav aria-label="Main" className="container-page flex h-16 items-center justify-between gap-6">
@@ -44,7 +44,7 @@ export function Navbar() {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-[13px] font-extrabold text-ink transition-transform group-hover:-rotate-6">
             AH
           </span>
-          <span className="text-[15px] font-semibold text-white">Asim Haider</span>
+          <span className="text-[15px] font-semibold text-ink">Asim Haider</span>
         </Link>
 
         <ul className="hidden items-center gap-1 lg:flex">
@@ -54,7 +54,7 @@ export function Navbar() {
                 to={`/#${link.href}`}
                 aria-current={isActive(link.href) ? "location" : undefined}
                 className={`relative rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive(link.href) ? "text-brand" : "text-neutral-400 hover:text-white"
+                  isActive(link.href) ? "text-ink" : "text-neutral-600 hover:text-ink"
                 }`}
               >
                 {link.label}
@@ -72,7 +72,7 @@ export function Navbar() {
           </Link>
           <button
             type="button"
-            className="grid h-10 w-10 place-items-center rounded-lg text-white hover:bg-white/10 lg:hidden"
+            className="grid h-10 w-10 place-items-center rounded-lg text-ink hover:bg-neutral-100 lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -84,7 +84,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-white/10 bg-ink lg:hidden">
+        <div id="mobile-menu" className="border-t border-neutral-200 bg-white lg:hidden">
           <ul className="container-page flex flex-col py-3">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -92,7 +92,7 @@ export function Navbar() {
                   to={`/#${link.href}`}
                   onClick={() => setOpen(false)}
                   className={`block rounded-md px-2 py-3 text-base font-medium ${
-                    isActive(link.href) ? "text-brand" : "text-neutral-300"
+                    isActive(link.href) ? "text-accent-600" : "text-neutral-700"
                   }`}
                 >
                   {link.label}

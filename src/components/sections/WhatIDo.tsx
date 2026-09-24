@@ -59,27 +59,27 @@ export function WhatIDo() {
               key={area.title}
               delay={i * 60}
               className={`group rounded-xl border-2 border-ink p-6 transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 ${
-                primary ? "bg-white shadow-hard-sm hover:shadow-hard lg:col-span-2" : "bg-ink text-neutral-300 lg:col-span-3"
+                primary ? "bg-white shadow-hard-sm hover:shadow-hard lg:col-span-2" : "bg-cream shadow-hard-sm hover:shadow-hard lg:col-span-3"
               }`}
             >
               <div className="flex items-start justify-between">
                 <div
-                  className={`grid h-11 w-11 place-items-center rounded-lg ${primary ? "bg-ink text-brand" : "bg-brand text-ink"}`}
+                  className={`grid h-11 w-11 place-items-center rounded-lg ${primary ? "bg-brand-soft text-ink" : "bg-brand text-ink"}`}
                 >
                   <area.icon size={20} aria-hidden="true" />
                 </div>
-                <span className={`font-mono text-[11px] font-semibold uppercase tracking-wider ${primary ? "text-ink/40" : "text-brand/70"}`}>
+                <span className={`font-mono text-[11px] font-semibold uppercase tracking-wider ${"text-ink/40"}`}>
                   {primary ? "Focus" : "Foundation"}
                 </span>
               </div>
-              <h3 className={`mt-4 text-lg font-bold ${primary ? "" : "text-white"}`}>{area.title}</h3>
-              <p className={`mt-1 text-sm ${primary ? "text-neutral-500" : "text-neutral-400"}`}>{area.summary}</p>
+              <h3 className={`mt-4 text-lg font-bold ${""}`}>{area.title}</h3>
+              <p className={`mt-1 text-sm ${"text-neutral-500"}`}>{area.summary}</p>
               <ul className="mt-4 flex flex-wrap gap-1.5">
                 {area.items.map((item) => (
                   <li
                     key={item}
                     className={`rounded-md px-2 py-1 text-xs font-medium ${
-                      primary ? "bg-brand-soft text-ink" : "border border-white/15 text-neutral-200"
+                      primary ? "bg-brand-soft text-ink" : "border border-ink/15 bg-white text-ink"
                     }`}
                   >
                     {item}

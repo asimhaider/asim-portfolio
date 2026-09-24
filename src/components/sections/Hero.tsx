@@ -24,15 +24,15 @@ const ticker = [
 export function Hero() {
   return (
     <>
-      <section id="home" aria-labelledby="hero-heading" className="relative overflow-hidden bg-ink text-neutral-300">
-        <div className="bg-grid-dark pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top_left,black_25%,transparent_70%)]" />
+      <section id="home" aria-labelledby="hero-heading" className="relative overflow-hidden bg-cream text-neutral-700">
+        <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top_left,black_25%,transparent_70%)]" />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-40 -right-40 h-[520px] w-[520px] rounded-full bg-brand/20 blur-[120px]"
+          className="pointer-events-none absolute -top-40 -right-40 h-[520px] w-[520px] rounded-full bg-brand/30 blur-[120px]"
         />
         <div className="container-page relative grid gap-14 pt-14 pb-20 sm:pt-20 lg:grid-cols-[1.25fr_1fr] lg:items-center lg:gap-16 lg:pt-24 lg:pb-24">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full border border-brand/40 bg-brand/10 px-3 py-1 text-xs font-medium text-brand">
+            <p className="inline-flex items-center gap-2 rounded-full border border-brand-deep bg-brand-soft px-3 py-1 text-xs font-medium text-ink">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-60 motion-safe:animate-ping" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
@@ -42,22 +42,22 @@ export function Hero() {
 
             <h1
               id="hero-heading"
-              className="mt-6 text-4xl leading-[1.05] font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.75rem]"
+              className="mt-6 text-4xl leading-[1.05] font-extrabold tracking-tight text-ink sm:text-5xl lg:text-[3.75rem]"
             >
               I build at the intersection of{" "}
               <span className="relative whitespace-nowrap text-ink">
                 <span aria-hidden="true" className="absolute inset-x-[-0.15em] inset-y-[0.08em] -z-0 -rotate-1 rounded-md bg-brand" />
                 <span className="relative">Product, Data</span>
               </span>{" "}
-              &amp; <span className="text-brand">Technology.</span>
+              &amp; <span className="text-accent-600">Technology.</span>
             </h1>
 
-            <p className="mt-6 text-base font-semibold text-white sm:text-lg">
-              Aspiring Associate Product Manager <span className="text-brand">/</span> Product Analyst{" "}
-              <span className="text-brand">/</span> Business Analyst
+            <p className="mt-6 text-base font-semibold text-ink sm:text-lg">
+              Aspiring Associate Product Manager <span className="text-accent-600">/</span> Product Analyst{" "}
+              <span className="text-accent-600">/</span> Business Analyst
             </p>
 
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
               IT Project Management graduate with a technical background in software development and hands-on experience
               working on product-oriented projects. I enjoy turning user problems and business requirements into
               structured product solutions, measurable outcomes, and practical experiences.
@@ -67,12 +67,12 @@ export function Hero() {
               <ButtonLink href="/#case-studies" internal variant="yellow" size="lg">
                 View My Work <ArrowRight size={16} />
               </ButtonLink>
-              <ButtonLink href={profile.resumeUrl} download={profile.resumeFileName} variant="outlineLight" size="lg">
+              <ButtonLink href={profile.resumeUrl} download={profile.resumeFileName} variant="secondary" size="lg">
                 <Download size={16} /> Download Resume
               </ButtonLink>
             </div>
 
-            <div className="mt-8 flex items-center gap-5 text-sm text-neutral-400">
+            <div className="mt-8 flex items-center gap-5 text-sm text-neutral-600">
               <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-brand">
                 <LinkedinIcon size={16} /> LinkedIn
               </a>
@@ -87,7 +87,7 @@ export function Hero() {
 
           {/* Candidate brief — styled like a one-page product spec */}
           <aside aria-label="Candidate summary" className="relative lg:rotate-1">
-            <div className="rounded-2xl border-2 border-ink bg-brand text-ink shadow-[8px_8px_0_0_rgba(255,255,255,0.12)]">
+            <div className="rounded-2xl border-2 border-ink bg-brand text-ink shadow-hard">
               <div className="flex items-center justify-between border-b-2 border-ink/10 px-5 py-3.5">
                 <div className="flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-ink" />

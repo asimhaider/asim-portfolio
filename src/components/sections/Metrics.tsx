@@ -58,21 +58,21 @@ export function Metrics() {
       </ol>
 
       {/* Goal → metric example */}
-      <Reveal className="mt-8 grid gap-6 rounded-2xl bg-ink p-6 text-neutral-300 sm:p-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+      <Reveal className="mt-8 grid gap-6 rounded-2xl bg-brand-soft p-6 text-neutral-700 sm:p-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
         <div>
-          <h3 className="text-xl font-bold text-white">
-            Start from the <span className="text-brand">goal</span>, not the dashboard
+          <h3 className="text-xl font-bold text-ink">
+            Start from the <span className="text-accent-600">goal</span>, not the dashboard
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-neutral-400">
+          <p className="mt-2 text-sm leading-relaxed text-neutral-600">
             I pair every success metric with a guardrail metric, so improving one number doesn't quietly damage
             another. An illustrative example from my grocery case study:
           </p>
         </div>
-        <dl className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:grid-cols-2">
+        <dl className="grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">
           {example.map((row) => (
-            <div key={row.label} className="bg-ink p-4">
-              <dt className="font-mono text-[11px] font-semibold uppercase tracking-wider text-brand">{row.label}</dt>
-              <dd className="mt-1 text-sm font-medium text-neutral-100">{row.value}</dd>
+            <div key={row.label} className="bg-white p-4">
+              <dt className="font-mono text-[11px] font-semibold uppercase tracking-wider text-accent-600">{row.label}</dt>
+              <dd className="mt-1 text-sm font-medium text-neutral-800">{row.value}</dd>
             </div>
           ))}
         </dl>

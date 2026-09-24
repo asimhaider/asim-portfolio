@@ -15,7 +15,7 @@ export function CaseStudyCard({ study, reverse = false }: { study: CaseStudy; re
       className="group grid overflow-hidden rounded-2xl border-2 border-ink bg-white shadow-hard-sm transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-hard lg:grid-cols-2"
     >
       <div className={`p-3 sm:p-4 ${reverse ? "lg:order-2" : ""}`}>
-        <CaseVisual type={study.visual} tone={reverse ? "dark" : "yellow"} className="h-full min-h-[260px]" />
+        <CaseVisual type={study.visual} tone="yellow" className="h-full min-h-[260px]" />
       </div>
 
       <div className="flex flex-col p-6 pt-3 sm:p-8 lg:pt-8">
